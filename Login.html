@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeStyle Store - Login</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="message.html" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      // script starts here....
+      function validate() 
+      {
+        var Username = document.getElementById("username");
+        var Password = document.getElementById("pass");
+
+        if (Username.value.trim() == "" || Password.valuetrim() == "") 
+        {
+          alert("No blank values allowed");
+          return false;
+        }
+         else 
+         {
+          return true;
+        }
+  }
+    </script>
+  </head>
+  <body style="text-align: center">
+    <div class="header">
+      <!-- main header -->
+      <div class="innerheader"></div>
+      <div class="logo">
+        <content>Lifestyle Store</content>
+      </div>
+      <div class="header-link">
+        <div class="Signup">
+          <content><a href="Signup.html" target="_blank">Signup</a></content>
+        </div>
+        <div class="Login">
+          <content><a href="Login.html" target="_blank"> Login</a></content>
+        </div>
+      </div>
+    </div>
+    <h1><i class="fas fa-sign-in-alt"></i> Register Now</h1>
+    <form onsubmit=" return validate()" action="message.html">
+      First name: <input type="text" id="firstname" placeholder="First name" /> <br /><br />
+
+     Last name: <input type="text" id="lastname" placeholder="Last name" /> <br /><br />
+
+      Phone No:<input type="number" id="mobile" placeholder="Phone no" /> <br /><br />
+
+      Username: <input type="text" id="username" placeholder="Username" required /> <br /><br />
+
+      Email: <input type="text" id="email" placeholder="email" required /> <br /><br />
+
+      Password: <input type="password" id="pass" placeholder="Password" required /><br /><br />
+
+      Confirm Password: <input type="password" id="cpass" placeholder=" Confirm Password" /><br /><br />
+
+      <button type="submit">submit</button>
+    </form>
+    <br />
+    <br />
+    <div class="footer">
+      <p style="font-weight: bold">
+        Copyright @ Lifestyle Store. All Rights Reserved | Contact Us: +91 90000
+        00000.
+      </p>
+    </div>
+  </body>
+</html>

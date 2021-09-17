@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <title>LifeStyle Store - Signup</title>
+    <link rel="stylesheet" href="index.html"/>
+
+    <link rel="stylesheet" href="message.html"/>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"> 
+          function validate(){
+              var Username = document.getElementById("username");
+
+              var Password = document.getElementById("pass");
+                // if else condition for username and password can't be empty.
+              if (Username.value.trim()=="") 
+                  {
+                    alert(" Userame can't be empty");   // username cannot be empty
+                   Username.style.border="solid 3px red";
+                    return false;
+                  }
+                   else if (Password.value.trim()=="")
+                   {
+                    alert(" Password can't be empty");  //password can't be empty
+                    
+                    Password.style.border="solid 3px red";
+                    return false; 
+                  }
+                  else if(Password.value.trim().length<5)
+                  {
+                    alert(" Password too  short");   //password can't be  less than 4 character
+                    return false;
+                  }
+                  else 
+                {
+                    return true;
+                }
+
+              if (Username.value.trim()=="" ||  Password.valuetrim()=="") 
+              {
+                  alert("No blank values allowed");
+                  return false;
+              } 
+              else 
+                {
+                    return true;
+                }
+
+             }
+
+              </script>
+</head>
+<body style="text-align: center;">
+    <div class="header">
+        <!-- main header -->
+        <div class="innerheader"></div>
+        <div class="logo">
+          <content>Lifestyle Store</content>
+        </div>
+        <div class="header-link">
+          <div class="Signup">
+            <content><a href="Signup.html" target="_blank">Signup</a></content>
+          </div>
+          <div class="Login">
+            <content><a href="Login.html" target="_blank"> Login</a></content>
+          </div>
+        </div>
+      </div> 
+    <h1>SignUp Now</h1>
+    <form onsubmit=" return validate()" action= "message.html" target="_self">
+        UserName: <input type="text" id="username" placeholder="Username" required> <br><br>
+        
+        Password: <input type="password" id="pass" placeholder="Password" required> <br><br>
+
+         <button onclick="validate()" type="submit"> submit</button>
+         
+    </form> <br> <br>
+    <div class="footer">
+        <p style="font-weight: bold">
+          Copyright @ Lifestyle Store. All Rights Reserved | Contact Us: +91 90000
+          00000.
+        </p>
+      </div>
+</body>
+</html>
